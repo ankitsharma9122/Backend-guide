@@ -236,10 +236,10 @@ Stateless → Request carries the context
 
 ** if you're using the standard Authorization header, Bearer is the standard authentication scheme for access tokens.
 
-## Session Vs Jwt - 
+## Session Vs JWT - 
 
 ## a) jwt based
-![Alt text](../Public/Jwt.png)
+![Alt text](../Public/JWT.png)
 
 
 ## b) Session based
