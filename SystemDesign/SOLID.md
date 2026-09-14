@@ -1,2 +1,2 @@
-## Rate Limiting
+## SOLID
 ![Alt text](../Public/SOLID.png)
