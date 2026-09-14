@@ -1,6 +1,8 @@
 ## Redis Detailed :
 ![Alt text](../Public/Redis.png)
 
+* By default RDB is enabled but AOF can be enabled by updating the config of redis.
+
 # Cache Invalidation
 
 **Definition:**
