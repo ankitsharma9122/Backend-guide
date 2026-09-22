@@ -5,12 +5,13 @@
 ## Mongo Basic :
 ![Alt text](../Public/Mongo2.png)
 
-<!-- PENDING
-SHARDING
-REPLICATION 
-CHALLENGES 
-HOSTING
- -->
+
+## Mongo Shard and Replication  and oplog:
+![Alt text](../Public/MongoShardAndReplication.png)
+
+
+## Mongo Indexs:
+![Alt text](../Public/MongoIndex.png)
 
 ```js
 const result = await Order.aggregate([
@@ -64,4 +65,51 @@ const result = await Order.aggregate([
     $limit: 5
   }
 ]);
+```
+
+
+**## Mongo Read, Write Concern and Majority:**
+
+- **Write Concern** → controls when MongoDB acknowledges a write.
+- **`w: "majority"`** → wait for acknowledgement from a majority of voting nodes.
+- **Read Concern** → controls what level of committed/consistent data a read can see.
+- **`readConcern: "majority"`** → read majority-committed data.
+- **Read Preference** → controls which replica-set node is preferred for reads.
+- **Majority** → more than half of voting members.
+  - 3 nodes → majority = 2
+  - 5 nodes → majority = 3
+
+```js
+{
+  writeConcern: { w: "majority" },
+  readConcern: { level: "majority" },
+  readPreference: "primary"
+}
+
+### Write Concern
+// MongoDB
+db.users.insertOne(
+  { name: "Ankit" },
+  { writeConcern: { w: "majority" } }
+)
+
+
+### Read / Write Concern at Mongoose Schema Level
+
+const userSchema = new mongoose.Schema(
+  {
+    name: String,
+    email: String
+  },
+  {
+    writeConcern: {
+      w: "majority"
+    },
+
+    readConcern: {
+      level: "majority"
+    }
+  }
+);
+
 ```
