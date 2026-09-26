@@ -35,3 +35,9 @@ Your Backend
 React
 https://myapp.com/dashboard
 ```
+
+First stage mein Google user ko authenticate/authorize karta hai aur backend ko temporary authorization code deta hai. Backend state verify karke ensure karta hai ki callback expected OAuth flow se aaya hai. Second stage mein backend us authorization code ko apni client credentials ke saath Google ke token endpoint par exchange karta hai, jahan Google code aur client details validate karke access token issue karta hai.
+
+
+## OAuth
+![Alt text](../Public/RateLimit.png)
