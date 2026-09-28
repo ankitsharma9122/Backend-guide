@@ -1,3 +1,3 @@
 # Backend-guide
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/ankitsharma9122/Backend-guide)
+[Ankit Sharma ⚡️](https://www.linkedin.com/in/ankit-kumar-93131a1b4/)
