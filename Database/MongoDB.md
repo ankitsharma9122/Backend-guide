@@ -6,6 +6,10 @@
 ![Alt text](../Public/Mongo2.png)
 
 
+## Mongo Embedding vs ref :
+![Alt text](../Public/EmbeddingvsRef.png)
+
+
 ## Mongo Shard and Replication  and oplog:
 ![Alt text](../Public/MongoShardAndReplication.png)
 
